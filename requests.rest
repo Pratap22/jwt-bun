@@ -1,0 +1,37 @@
+GET http://localhost:3000/shops
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InByYXRhcCIsImV4cCI6MTY5NTU1Mjg3MH0.gmMcxundIAODcC1Hu1hfhFtS0zfMRt2sTvw0m9JEtl4
+
+###
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "pratap",
+    "password": "strong-password"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "pratap",
+    "password": "strong-password"
+}
+
+###
+POST http://localhost:3000/refresh
+Content-Type: application/json
+
+{
+    "refreshToken": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InByYXRhcCJ9.lP9DrFj_OUZUHq0L6i0YbK9S1QuQKO3X-yiQ-4Wr4Po"
+}
+
+###
+DELETE http://localhost:3000/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InByYXRhcCIsImV4cCI6MTY5NTU1MjkwOX0.fKPXjsxdHzxmH7urh9MJyIRSK3di_ro0hmR26RikT04
+
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VybmFtZSI6InByYXRhcCJ9.lP9DrFj_OUZUHq0L6i0YbK9S1QuQKO3X-yiQ-4Wr4Po"
+}
